@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BunnyHub | Discord PY</title>
+    <link rel="shortcut icon" href="file/img/green_logo.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="file/style.css">
+  </head>
+  <body>
+
+    <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#" style="padding: 5px 5px 5px 5px;"><img src="file/img/green_logo.png" alt="BunnyHub Green Logo" style="height: 45px;"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <img src="file/img/green_logo.png" alt="BunnyHub Green Logo" style="height: 50px; cursor: pointer;" class="offcanvas-title" id="offcanvasNavbarLabel">
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Contact</a>
+                </li>
+                <hr>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Discord
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="discord.html">Discord PY</a></li>
+                    <li><a class="dropdown-item" href="#features">Features</a></li>
+                    <li><a class="dropdown-item" href="#getting-started">Getting Started</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="discord-introduction.html">Introduction</a></li>
+                    <li><a class="dropdown-item" href="discord.html#quickstart">Quickstart</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex mt-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+              <hr>
+              <ul class="promotion-menu" style="justify-content: center; list-style: none; display: flex; font-size: 25px; letter-spacing: 25px;">
+                <li><a href="https://www.instagram.com/bunnysenpai08/"><i class="bi bi-instagram" style="color: #fff;"></i></a></li>
+                <li><a href="https://www.github.com/BunnySenpai08"><i class="bi bi-github" style="color: #fff;"></i></a></li>
+                <li><a href="https://discord.gg/uYQdQjdWen"><i class="bi bi-discord" style="color: #fff;"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      
+    <div class="container mt-5" style="padding: 60px 0px 60px 0px">
+        <h1>Discord PY</h1>
+        <p style="margin-right: 0%;">
+          discord.py is a modern, easy to use, feature-rich, and async ready API wrapper for Discord.
+        </p>
+    </div>
+
+    <hr>
+
+    <div class="container mt-5" style="padding: 10px 0px 10px 0px">
+        <h1 id="features">Features</h1>
+        <ul>
+          <li>Modern Pythonic API using <b>async</b>/<b>await</b> syntax</li>
+          <li>Sane rate limit handling that prevents 429s</li>
+          <li>Command extension to aid with bot creation</li>
+          <li>Easy to use with an object oriented design</li>
+          <li>Optimised for both speed and memory</li>
+        </ul>
+    </div>
+
+    <div class="container mt-5" style="padding: 25px 0px 25px 0px">
+      <h1 id="getting-started">Getting Started</h1>
+      <p style="margin-right: 0%;">
+        Is this your first time using the library? This is the place to get started!
+      </p>
+      <ul>
+        <li><b>First steps:</b> <a href="#quickstart" style="text-decoration: none;">Quickstart</a>
+        | <a href="discord-introduction.html" style="text-decoration: none;">Introduction</a>
+        </li>
+        <li><b>Working with discord:</b> <a href="#create-bot" style="text-decoration: none;">Creating a Bot Account</a></li>
+        <li><b>Examples:</b> Many examples are available in the <a href="https://github.com/Rapptz/discord.py/tree/master/examples" style="text-decoration: none;">repository</a>.</li>
+      </ul>
+  </div>
+
+  <hr>
+
+  <div class="container mt-5">
+    <h1>Quickstart</h1>
+    <p>This page gives a brief introduction to the library. It assumes you have the library installed, if you don’t check the <a href="discord-introduction.html#installing" style="text-decoration: none;">Installing</a> portion.</p>
+    <button class="btn btn-primary" id="quickstart" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" style="padding: 10px 0px 10px 0px; position: relative; margin-bottom: 25px; width: 125px;">
+      Quickstart
+    </button>
+    <div class="collapse" id="collapseExample">
+      <div class="card card-body" style="margin-bottom: 50px;">
+        <h3>A Minimal Bot</h3>
+        <p>Let’s make a bot that responds to a specific message and walk you through it.</p>
+        <p></p>
+        <p> It looks something like this:</p>
+
+        <code class="card card-body">
+          <p style="margin-top: 10px;">import discord</p>
+          <p>from discord.ext import commands</p>
+          <p></p>
+          <p>intents = discord.Intents.default()</p>
+          <p>bot = commands.Bot( #prefix command_prefix="?" #intents intents=intents)</p>
+          <p>@bot.event</p>
+          <p>async def on_ready():</p>
+          <p style="padding: 0px 20px 0 20px;">print("im alive")</p>
+          <p></p>
+          <p>@bot.event</p>
+          <p>async def on_message(message):</p>
+          <p style="padding: 0px 20px 0 20px;">if message.author == client.user:</p>
+          <p style="padding: 0px 40px 0 40px;">return</p>
+          <p style="padding: 0px 20px 0 20px;">if message.content.startswith('$hello'):</p>
+          <p style="padding: 0px 40px 0 40px;">await message.channel.send('Hello!')</p>
+
+          <p>bot.run("YOUR-BOT-TOKEN")</p>
+        </code>
+        <p>Let’s name this file <b>example_bot.py</b>. Make sure not to name it <b>discord.py</b> as that’ll conflict with the library.</p>
+        <p>Now that we’ve made a bot, we have to run the bot. Luckily, this is simple since this is just a Python script, we can run it directly.</p>
+        <p>On Windows:</p>
+
+        <code class="card card-body">
+          <p>$ py -3 example_bot.py</p>
+        </code>
+
+        <p>On other systems:</p>
+        <code class="card card-body">
+          <p>$ python3 example_bot.py</p>
+        </code>
+        <p>Now you can try playing around with your basic bot.</p>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+  <div class="container mt-5">
+    <h1 id="create-bot">Creating a Bot Account</h1>
+    <p>In order to work with the library and the Discord API in general, we must first create a Discord Bot account.</p>
+
+    <p>Creating a Bot account is a pretty straightforward process.</p>
+
+    <ul>
+      <li style="list-style: decimal;">Make sure you’re logged on to the <a href="https://discord.com" style="text-decoration: none;">Discord website</a>.</li>
+      <li style="list-style: decimal;">Navigate to the <a href="https://discord.com/developers/applications" style="text-decoration: none;">application page</a></li>
+      <li style="list-style: decimal;">Click on the “New Application” button.</li>
+
+      <img src="https://discordpy.readthedocs.io/en/latest/_images/discord_create_app_button.png" style="padding: 10px 10px 10px 10px;">
+
+      <li style="list-style: decimal;">Give the application a name and click “Create”.</li>
+      <img src="https://discordpy.readthedocs.io/en/latest/_images/discord_create_app_form.png" style="padding: 10px 10px 10px 10px; height: 50vw;">
+      <li style="list-style: decimal;">Navigate to the “Bot” tab to configure it.</li>
+      <li style="list-style: decimal;">Make sure that Public Bot is ticked if you want others to invite your bot.</li>
+      <ul>
+        <li style="list-style: disc;">You should also make sure that Require OAuth2 Code Grant is unchecked unless you are developing a service that needs it. If you’re unsure, then leave it unchecked.</li>
+      </ul>
+      <img src="https://discordpy.readthedocs.io/en/latest/_images/discord_bot_user_options.png" style="padding: 10px 0px 10px 10px; height: 50vw;">
+      <li style="list-style: decimal;">Copy the token using the “Copy” button.</li>
+      <ul>
+        <li style="list-style: disc;"><b>This is not the Client Secret at the General Information page.</b></li>
+      </ul>
+    </ul>
+    <code class="card card-body">
+      <strong>Warning:</strong>
+      <p>It should be worth noting that this token is essentially your bot’s password. You should never share this with someone else. In doing so, someone can log in to your bot and do malicious things, such as leaving servers, ban all members inside a server, or pinging everyone maliciously.</p>
+      <p>The possibilities are endless, so <b>do not share this token.</b></p>
+      <p>If you accidentally leaked your token, click the “Regenerate” button as soon as possible. This revokes your old token and re-generates a new one. Now you need to use the new token to login.</p>
+    </code>
+    <p>And that’s it. You now have a bot account and you can login with that token.</p>
+  </div>
+
+  <div class="container mt-5">
+    <h1>Inviting Your Bot</h1>
+    <p>So you’ve made a Bot User but it’s not actually in any server.</p>
+    <p>If you want to invite your bot you must create an invite URL for it.</p>
+    <ul class="list">
+      <li style="list-style: decimal;">Make sure you’re logged on to the <a href="https://discord.com" style="text-decoration: none;">Discord website</a>.</li>
+      <li style="list-style: decimal;">Navigate to the <a href="https://discord.com/developers/applications" style="text-decoration: none;">application page</a></li>
+      <li style="list-style: decimal;">Click on your bot’s page.</li>
+      <li style="list-style: decimal;">Go to the “OAuth2 > URL Generator” tab.</li>
+      <img src="https://discordpy.readthedocs.io/en/latest/_images/discord_oauth2.png" style="padding: 10px 0px 10px 10px; height: 40vw;">
+      <li style="list-style: decimal;">Tick the “bot” checkbox under “scopes”.</li>
+      <img src="https://discordpy.readthedocs.io/en/latest/_images/discord_oauth2_scope.png" style="padding: 10px 0px 10px 10px; height: 25vw;">
+      <li style="list-style: decimal;">Tick the permissions required for your bot to function under “Bot Permissions”.</li>
+      <ul>
+        <li style="list-style: disc;">Please be aware of the consequences of requiring your bot to have the “Administrator” permission.</li>
+        <li style="list-style: disc;">Bot owners must have 2FA enabled for certain actions and permissions when added in servers that have Server-Wide 2FA enabled. Check the <a href="https://support.discord.com/hc/en-us/articles/219576828-Setting-up-Two-Factor-Authentication" style="text-decoration: none;">2FA support page</a> for more information.</li>
+      </ul>
+      <img src="https://discordpy.readthedocs.io/en/latest/_images/discord_oauth2_perms.png" style="padding: 10px 0px 10px 10px; height: 40vw;">
+      <li style="list-style: decimal;">Now the resulting URL can be used to add your bot to a server. Copy and paste the URL into your browser, choose a server to invite the bot to, and click “Authorize”.</li>
+      <code class="card card-body">
+        <strong>Note</strong>
+        <p>The person adding the bot needs “Manage Server” permissions to do so.</p>
+      </code>
+      <p>If you want to generate this URL dynamically at run-time inside your bot and using the <a href="https://discordpy.readthedocs.io/en/latest/api.html#discord.Permissions" style="text-decoration: none;">discord.Permissions</a> interface, you can use <a href="https://discordpy.readthedocs.io/en/latest/api.html#discord.utils.oauth_url" style="text-decoration: none;">discord.utils.oauth_url()</a>.</p>
+    </ul>
+    
+
+  </div>
+
+  <footer class="footer" style="text-align: center; padding: 10px 10px 10px 10px;">
+    <p>
+      2023 BunnySenpai Corporation
+    </p>
+    <ul class="promotion-menu" style="justify-content: center; list-style: none; display: flex; font-size: 25px; letter-spacing: 25px;">
+      <li><a href="https://www.instagram.com/bunnysenpai08/"><i class="bi bi-instagram" style="color: #fff;"></i></a></li>
+      <li><a href="https://www.github.com/BunnySenpai08"><i class="bi bi-github" style="color: #fff;"></i></a></li>
+      <li><a href="https://discord.gg/uYQdQjdWen"><i class="bi bi-discord" style="color: #fff;"></i></a></li>
+    </ul>
+  </footer>
+    
+    <!-- Bootstrap javascripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+
+  </body>
+</html>
